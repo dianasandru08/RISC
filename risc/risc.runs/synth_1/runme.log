@@ -1,0 +1,752 @@
+
+*** Running vivado
+    with args -log implem_RISC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source implem_RISC.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source implem_RISC.tcl -notrace
+Command: synth_design -top implem_RISC -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 693.730 ; gain = 177.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'implem_RISC' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/implem_RISC.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'proc_RISC' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd:38]
+	Parameter DIM_MI bound to: 256 - type: integer 
+	Parameter DIM_MD bound to: 256 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mem_instr' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mem_instr.vhd:32]
+	Parameter DIM_MI bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mem_instr' (1#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mem_instr.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'set_reg' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/set_reg.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'set_reg' (2#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/set_reg.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'unit_aritm' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'FUNC' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'FUNC' (3#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'DEPL' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mux_4_1.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1' (4#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mux_4_1.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'DEPL' (5#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'unit_aritm' (6#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'mem_date' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mem_date.vhd:34]
+	Parameter DIM_MD bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mem_date' (7#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mem_date.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'FDN' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDN' (8#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'FDN__parameterized0' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDN__parameterized0' (8#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'FDN__parameterized1' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDN__parameterized1' (8#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'FDN__parameterized2' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDN__parameterized2' (8#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd:34]
+WARNING: [Synth 8-3848] Net im_ex in module/entity proc_RISC does not have driver. [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'proc_RISC' (9#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'filtru_buton' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/filtru_buton.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'filtru_buton' (10#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/filtru_buton.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'afis_uart' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/afis_uart.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'conv_uart' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/conv_uart.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'conv_uart' (11#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/conv_uart.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'uart_send64' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/uart_send64.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/uart_tx.vhd:35]
+	Parameter BIT_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (12#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/uart_tx.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'uart_send64' (13#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/uart_send64.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'afis_uart' (14#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/afis_uart.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'implem_RISC' (15#1) [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/pentruRISCplaca/implem_RISC.vhd:34]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[31]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[30]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[29]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[28]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[27]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[26]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[25]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[24]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[23]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[22]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[21]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[20]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[19]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[18]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[17]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[16]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[15]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[14]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[13]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[12]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[11]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[10]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[9]
+WARNING: [Synth 8-3331] design conv_uart has unconnected port AdrInstr[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 758.887 ; gain = 242.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 758.887 ; gain = 242.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 758.887 ; gain = 242.703
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/constrs_1/imports/pentruRISCplaca/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/constrs_1/imports/pentruRISCplaca/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/constrs_1/imports/pentruRISCplaca/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/implem_RISC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/implem_RISC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 890.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 890.680 ; gain = 374.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 890.680 ; gain = 374.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 890.680 ; gain = 374.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "MI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd:40]
+INFO: [Synth 8-5587] ROM size for "Mnemo[1]" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Mnemo[2]" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Mnemo[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mnemo[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "C3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "C6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'St_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'St_reg' in module 'uart_send64'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ready |                            00001 |                              000
+                    load |                            00010 |                              001
+                    send |                            00100 |                              010
+                 waitbit |                            01000 |                              011
+                   shift |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'St_reg' using encoding 'one-hot' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ready |                            00001 |                              000
+               send_byte |                            00010 |                              001
+                wait_rdy |                            00100 |                              010
+                 inc_cnt |                            01000 |                              011
+                test_cnt |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'St_reg' using encoding 'one-hot' in module 'uart_send64'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 890.680 ; gain = 374.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 33    
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               22 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   9 Input     33 Bit        Muxes := 1     
+	 257 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 4     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  29 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 4     
+	   5 Input      7 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   4 Input      1 Bit        Muxes := 32    
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mem_instr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     32 Bit        Muxes := 1     
+Module set_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module FUNC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   9 Input     33 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module mux_4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module DEPL 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module unit_aritm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mem_date 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module FDN 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FDN__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module FDN__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module FDN__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 1     
+Module proc_RISC 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+Module filtru_buton 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module conv_uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 32    
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	  29 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 4     
+	  10 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_send64 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "conv_uart_i/Mnemo[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_uart_i/Mnemo[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "conv_uart_i/Mnemo[2]" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "conv_uart_i/Mnemo[1]" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "conv_uart_i/C6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_uart_i/C3" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[31]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[30]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[29]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[28]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[27]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[26]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[25]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[24]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[23]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[22]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[21]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[20]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[19]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[18]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[17]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[16]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[15]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[14]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[13]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[12]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[11]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[10]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[9]
+WARNING: [Synth 8-3331] design afis_uart has unconnected port AdrInstr[8]
+INFO: [Synth 8-4471] merging register 'proc_RISC_i/R/DoutA_reg[31:0]' into 'proc_RISC_i/R/DoutB_reg[31:0]' [C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/set_reg.vhd:44]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[11] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[0]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[3]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[1]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[2]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[4]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[7]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[5]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[6]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[8]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[11]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[9]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[10]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[12]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[15]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[13]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[14]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[16]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[19]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[17]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[18]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[20]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[23]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[21]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[22]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[27]' (FDR) to 'proc_RISC_i/MI/Data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[26]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[24]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[29]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[30]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[28]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/MI/Data_reg[31]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[31]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[30]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[29]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[28]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[25]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[26]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[27]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[24]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[23]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[22]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[17]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[18]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[19]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[20]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[21]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[16]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[15]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[14]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[13]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[12]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[0]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[1]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[2]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[3]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[4]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[5]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[6]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[7]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[8]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[9]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[10]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCIF/Q_reg[11]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[31] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[31]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[30] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[30]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[29] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[29]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[28]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[25] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[25]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[26] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[26]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[27] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[27]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[24]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[23] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[23]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[22]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[17] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[17]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[18] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[18]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[19]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[20] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[20]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[21] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[21]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[16]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[15] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[15]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[14]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[13] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[13]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[12]' (FDR) to 'proc_RISC_i/PCID/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[3] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[0]' (FDR) to 'proc_RISC_i/PCID/Q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[1]' (FDR) to 'proc_RISC_i/PCID/Q_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[2] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[2]' (FDR) to 'proc_RISC_i/PCID/Q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[3] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[3]' (FDR) to 'proc_RISC_i/PCID/Q_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[4] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[4]' (FDR) to 'proc_RISC_i/PCID/Q_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[5] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[5]' (FDR) to 'proc_RISC_i/PCID/Q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[6]' (FDR) to 'proc_RISC_i/PCID/Q_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[7] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[7]' (FDR) to 'proc_RISC_i/PCID/Q_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[8] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[8]' (FDR) to 'proc_RISC_i/PCID/Q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[9] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[9]' (FDR) to 'proc_RISC_i/PCID/Q_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[10] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/PCID/Q_reg[10]' (FDR) to 'proc_RISC_i/PCID/Q_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RCONST/Q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[9] )
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/FEX/Q_reg[31]' (FDR) to 'proc_RISC_i/CCEX/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/RID/Q_reg[0]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/RID/Q_reg[1]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/RID/Q_reg[2]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/RID/Q_reg[3]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'proc_RISC_i/RID/Q_reg[4]' (FDR) to 'proc_RISC_i/RID/Q_reg[11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\proc_RISC_i/RID/Q_reg[11] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 890.680 ; gain = 374.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem_date:   | MD_reg     | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------+-----------+----------------------+--------------+
+|implem_RISC | proc_RISC_i/R/R_reg | Implied   | 16 x 32              | RAM32M x 6   | 
++------------+---------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:59 ; elapsed = 00:02:16 . Memory (MB): peak = 890.680 ; gain = 374.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:21 . Memory (MB): peak = 896.797 ; gain = 380.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem_date:   | MD_reg     | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------+-----------+----------------------+--------------+
+|implem_RISC | proc_RISC_i/R/R_reg | Implied   | 16 x 32              | RAM32M x 6   | 
++------------+---------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 900.422 ; gain = 384.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:11 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:11 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:12 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:12 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:12 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:12 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |LUT2   |    27|
+|5     |LUT3   |    26|
+|6     |LUT4   |    44|
+|7     |LUT5   |    34|
+|8     |LUT6   |    97|
+|9     |RAM32M |     6|
+|10    |FDRE   |   124|
+|11    |FDSE   |     2|
+|12    |IBUF   |     3|
+|13    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+--------------------+------+
+|      |Instance          |Module              |Cells |
++------+------------------+--------------------+------+
+|1     |top               |                    |   374|
+|2     |  afis_uart_i     |afis_uart           |   197|
+|3     |    uart_send64_i |uart_send64         |   197|
+|4     |      uart_tx_i   |uart_tx             |   173|
+|5     |  filtru_buton_i  |filtru_buton        |    30|
+|6     |  proc_RISC_i     |proc_RISC           |   138|
+|7     |    CCEX          |FDN__parameterized1 |     1|
+|8     |    FEX           |FDN                 |    31|
+|9     |    MI            |mem_instr           |     2|
+|10    |    R             |set_reg             |   103|
++------+------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:12 ; elapsed = 00:02:28 . Memory (MB): peak = 907.164 ; gain = 390.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:37 ; elapsed = 00:02:16 . Memory (MB): peak = 907.164 ; gain = 259.188
+Synthesis Optimization Complete : Time (s): cpu = 00:02:12 ; elapsed = 00:02:29 . Memory (MB): peak = 907.164 ; gain = 390.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+213 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:31 ; elapsed = 00:02:51 . Memory (MB): peak = 911.684 ; gain = 613.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 911.684 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/diana/Desktop/SSC2/risc/risc.runs/synth_1/implem_RISC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file implem_RISC_utilization_synth.rpt -pb implem_RISC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  6 12:40:35 2021...

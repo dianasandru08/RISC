@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sim_1/new/TB.vhd,1608052274,vhdl,,,,tb,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/RISC_pkg.vhd,1494524558,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd,,,risc_pkg,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mem_date.vhd,1494523436,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd,,,mem_date,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mem_instr.vhd,1494523354,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd,,,mem_instr,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/mux_4_1.vhd,1494523382,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd,,,mux_4_1,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd,1608050410,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sim_1/new/TB.vhd,,,proc_risc,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/set_reg.vhd,1494523362,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd,,,set_reg,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/unit_aritm.vhd,1494523372,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd,,,depl;func;unit_aritm,,,,,,,,
+C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/new/FDN.vhd,1608046801,vhdl,C:/Users/diana/Desktop/SSC2/risc/risc.srcs/sources_1/imports/RISC/proc_RISC.vhd,,,fdn,,,,,,,,

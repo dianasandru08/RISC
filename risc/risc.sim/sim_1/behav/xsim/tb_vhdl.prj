@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../risc.srcs/sources_1/new/FDN.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/RISC_pkg.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/mem_instr.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/set_reg.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/mux_4_1.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/unit_aritm.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/mem_date.vhd" \
+"../../../../risc.srcs/sources_1/imports/RISC/proc_RISC.vhd" \
+"../../../../risc.srcs/sim_1/new/TB.vhd" \
+
+# Do not sort compile order
+nosort
